@@ -11,17 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300;500&family=Playfair+Display:ital,wght@1,600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <div class="parallax">
-            <h1 class="headerTitulo">BellaDonna Helados</h1>
+            <h1 class="headerTitulo" data-aos="zoom-out" data-aos-duration="1300">BellaDonna Helados</h1>
             <div id="logoMobile"> <img class="bordeLogo" src="../images/logo.jpg" alt="logo">
             </div>
         </div>
     </header>
     <nav>
-        <img class="bordeLogo" src="../images/logo.jpg" alt="logo">
+        <a href="../index.html"> <img class="bordeLogo hvr-grow" src="../images/logo.jpg" alt="logo"></a>
         <ul>
             <li><a href="../index.html">Empresa</a> </li>
             <li><a href="productos.html">Productos</a></li>
@@ -32,17 +33,17 @@
     <section>
         <h2 class="txtCenter">CONTACTO</h2>
         <div class="iconContacto">
-            <div class="iconColumn">   
-                <i class="fa-solid fa-display fa-6x"></i>
-                <a href="">belladonna@gmail.com</a>
+            <div class="iconColumn" data-aos="fade-up" data-aos-duration="1000">   
+                <i class="fa-solid fa-display fa-6x" ></i>
+                <a href="" class="hvr-grow">belladonna@gmail.com</a>
             </div>
-            <div class="iconColumn">
+            <div class="iconColumn" data-aos="fade-up" data-aos-duration="2000">
                 <i class="fa-solid fa-map-location-dot fa-6x"></i>
-                <a href="https://goo.gl/maps/WZdziGcy7RVi3Ujh7 " target="_blank">Potosi 2148</a>
+                <a href="https://goo.gl/maps/WZdziGcy7RVi3Ujh7 " target="_blank" class="hvr-grow">Potosi 2148</a>
             </div>
-            <div class="iconColumn">
-                <i class="fa-solid fa-mobile-screen fa-6x"></i>
-                <a href="">11-4464-3979</a>
+            <div class="iconColumn" data-aos="fade-up" data-aos-duration="3000">
+                <i class="fa-solid fa-mobile-screen fa-6x" ></i>
+                <a href="" class="hvr-grow">11-4464-3979</a>
             </div>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.916752068551!2d-58.564894084235526!3d-34.65680526781706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc875f4813609%3A0x7808dc19b4ba97a5!2sBella%20Donna%20Helado%20Artesanal!5e0!3m2!1ses-419!2sar!4v1651072379357!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -50,5 +51,9 @@
     <footer>
         <h4 class="colorNaranja">2022-Alan Cervino</h4>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
