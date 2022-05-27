@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Oleo Script Swash Caps', cursive; */
+
+
+nav{
+    top: 0;
+    position: sticky;
+    background-color: #f5bf99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    height: 3em;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li a{
+    display: flex;
+    padding: 0 2em;
+}
+
+h2{
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: #fb8500;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cbe8 74%);
+}
+
+p{
+    font-size: 19px;
+}
+
+iframe{
+    width: 100%;
+}
+
+footer{
+    background-color: #4d4c4c;
+    padding:  20px;
+    text-align: center;
+}
+
+.parallax{
+    background-image: url(https://agromagazine.com/wp-content/uploads/2019/07/helados-1.jpg);
+   	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height: 103vh;
+	position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.empresaContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.empresaPar{
+    width: 600px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.empresaImg{
+    margin: 50px auto;
+}
+
+.empresaImg img{
+    border-radius: 1.5em;
+    width: 50vh;
+}
+
+.headerTitulo{
+    display: flex;
+    align-items: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.575);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    word-spacing: 1em;
+    font-weight: 400;
+}
+
+.colorNaranja{
+    color: #fb8500;
+}
+
+.txtCenter{
+    text-align: center;
+    margin: 40px;
+}
+
+.bordeLogo{
+    border-radius: 200px;
+    height: 125px;
+    margin-left: 30px;
+}
+
+
+.borderSolid:hover{
+    border-color: #fb8500;
+}
+
+
+.productoImg{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.postre{
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.iconContacto{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    margin-bottom: 3em;
+}
+
+.iconColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+}
+
+#logoMobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+
+    .parallax{
+        height: 100vh;
+    }
+
+    #logoMobile{
+        display: flex;
+        align-items: center;
+    }
+    
+    .bordeLogo{
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    nav .bordeLogo{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-around;
+    }
+   
+    .headerTitulo{
+        display: none;
+    }
+    
+    .empresaContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .empresaPar{
+        text-align: center;
+        width: 100%;
+        margin: 0 10em;
+    }
+   
+    .postre{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    nav li a{
+        padding: 1em;
+    }
+      
+    .productoImg{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .iconContacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        row-gap: 2em;
+    }
+}
