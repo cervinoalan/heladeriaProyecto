@@ -198,7 +198,11 @@ footer{
     }
 
     nav{
-        justify-content: space-around;
+        justify-content: center;
+    }
+
+    nav ul li{
+        margin: 0 1.5em;
     }
    
     .headerTitulo{
@@ -226,6 +230,9 @@ footer{
 
     nav li a{
         padding: 1em;
+    }
+    nav ul li{
+        margin: 0;
     }
       
     .productoImg{
