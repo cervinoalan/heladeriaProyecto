@@ -10,30 +10,6 @@ font-family: 'Playfair Display', serif; */
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Oleo Script Swash Caps', cursive; */
 
-
-nav{
-    top: 0;
-    position: sticky;
-    background-color: #f5bf99;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.3em;
-    height: 3em;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0.8em;
-}
-
-nav li a{
-    display: flex;
-    padding: 0 2em;
-}
-
 h2{
     margin: 20px;
 }
@@ -122,6 +98,19 @@ footer{
     margin-left: 30px;
 }
 
+.bordeLogoXS{
+    border-radius: 200px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.navColor{
+    background-color: #f5bf99;
+}
+
+.nav-link-size{
+    font-size: 1.5em;
+}
 
 .borderSolid:hover{
     border-color: #fb8500;
@@ -183,7 +172,11 @@ footer{
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 991px){
+
+    nav a{
+        display: none;
+    }
 
     .parallax{
         height: 100vh;
@@ -199,19 +192,7 @@ footer{
         margin: 0 auto;
     }
 
-    nav .bordeLogo{
-        display: none;
-    }
-
-    nav{
-        justify-content: center;
-    }
-
-    nav ul li{
-        margin: 0 1.5em;
-    }
-   
-    .headerTitulo{
+     .headerTitulo{
         display: none;
     }
     
@@ -234,13 +215,6 @@ footer{
 
 @media screen and (max-width:480px) {
 
-    nav li a{
-        padding: 1em;
-    }
-    nav ul li{
-        margin: 0;
-    }
-      
     .productoImg{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
