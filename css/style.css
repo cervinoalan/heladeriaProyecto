@@ -61,22 +61,20 @@ footer{
     width: 600px;
     height: 200px;
     overflow: hidden;
-}
-
-.empresaImg{
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .empresaImg img{
     border-radius: 1.5em;
     width: 50vh;
+    margin: 0 auto;
 }
 
 .headerTitulo{
     display: flex;
     align-items: center;
     font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 8em;
+    font-size: 6em;
     color: rgba(255, 255, 255, 0.575);
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     word-spacing: 1em;
@@ -95,12 +93,6 @@ footer{
 .bordeLogo{
     border-radius: 200px;
     height: 125px;
-    margin-left: 30px;
-}
-
-.bordeLogoXS{
-    border-radius: 200px;
-    height: 100px;
     margin-left: 30px;
 }
 
