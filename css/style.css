@@ -70,6 +70,11 @@ footer{
     margin: 0 auto;
 }
 
+.imgSuc{
+    width: 90vh;
+    height: 500px;
+}
+
 .headerTitulo{
     display: flex;
     align-items: center;
