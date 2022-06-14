@@ -1,0 +1,5 @@
+@mixin contenedor1 ($fondo,$ancho,$alto,){
+    background-color: $fondo;
+    width: $ancho;
+    height: $alto;
+}

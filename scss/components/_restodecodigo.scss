@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -10,57 +10,57 @@ font-family: 'Playfair Display', serif; */
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Oleo Script Swash Caps', cursive; */
 
-h2{
+h2 {
     margin: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
-    &:hover{
-            color: $color-principal;
-        }
+
+    &:hover {
+        color: $color-principal;
+    }
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cbe8 74%);
 }
 
-p{
+p {
     font-size: 19px;
 }
 
-footer{
+footer {
     background-color: $color-footer;
-    padding:  20px;
+    padding: 20px;
     text-align: center;
 }
 
-
-.colorNaranja{
+.colorNaranja {
     color: $color-principal;
 }
 
-.navColor{
+.navColor {
     background-color: $color-navbar;
 }
+
 /* Fondo Principal */
-.parallax{
+.parallax {
     background-image: url(https://agromagazine.com/wp-content/uploads/2019/07/helados-1.jpg);
-   	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:  cover;
-	height: 103vh;
-	position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 103vh;
+    position: relative;
     display: flex;
     justify-content: center;
 }
 
-.headerTitulo{
-    display: flex;
-    align-items: center;
+.headerTitulo {
+    @extend %dflex;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 6em;
     color: rgba(255, 255, 255, 0.575);
@@ -70,68 +70,60 @@ footer{
 }
 
 /* Maquetado de la pagina index */
-.empresaContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-.empresaPar{
+.empresaPar {
     width: 35vw;
     overflow: hidden;
     margin: 0 auto;
     text-align: justify;
 }
 
-.empresaImg img{
+.empresaImg img {
     border-radius: 1.5em;
-    width: 368px;
-    margin: 0 auto;
+    width: 25vw;
+    margin: 20px auto;
 }
 
 /* Maquetado de la pagina sucursales */
-.imgSuc{
+.imgSuc {
     width: 100%;
     max-height: 400px;
 }
 
 /* Maquetado de la pagina productos */
-.productoImg{
+.productoImg {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.postre{
+.postre {
     display: grid;
     height: 100%;
     width: 100%;
 }
 
 /* Maquetado de la pagina Contacto */
-.iconContacto{
+.iconContacto {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     margin-bottom: 3em;
 }
 
-.iconColumn{
-    display: flex;
+.iconColumn {
+    @extend %dflex;
     flex-direction: column;
-    align-items: center;
     row-gap: 1em;
 }
 
 /* Diseño de Logo + sus animaciones */
-.bordeLogo{
+.bordeLogo {
     border-radius: 200px;
     height: 125px;
     margin-left: 30px;
 }
 
-#logoMobile{
-    display: none;
+#logoMobile {
+    display: map-get($logo , invisible);
 }
 
 .hvr-grow {
@@ -143,52 +135,62 @@ footer{
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
-    &:hover, :focus, :active{
+
+    &:hover,
+    :focus,
+    :active {
         transform: scale(1.1);
     }
 }
 
 /* Diseño Acordeon */
-.acordion-colorMod{
+.acordion-colorMod {
     color: #000;
     background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cbe8 74%);
 }
 
-@media screen and (max-width: 991px){
+/* MediasQ */
+@media screen and (max-width: 991px) {
 
-    #collapseThree, #collapseTwo, #collapseOne{
+    #collapseThree,
+    #collapseTwo,
+    #collapseOne {
         flex-direction: column;
     }
 
-    nav a{
+    nav a {
         display: none;
     }
 
-    .parallax{
+    .parallax {
         height: 100vh;
     }
 
-    #logoMobile{
-        display: flex;
-        align-items: center;
+    #logoMobile {
+        display: map-get($logo , visible);
+        align-items: map-get($logo , centrado)
     }
-    
-    .bordeLogo{
+
+    .bordeLogo {
         height: 250px;
         margin: 0 auto;
     }
 
-    .headerTitulo{
+    .headerTitulo {
         display: none;
     }
-        
-    .empresaPar{
+
+    .empresaPar {
         text-align: center;
         width: 100%;
         margin: 0 10em;
     }
-   
-    .postre{
+
+    .empresaImg img {
+        width: 55vw;
+    }
+
+    .postre {
         height: 100%;
         width: 100%;
     }
@@ -196,12 +198,16 @@ footer{
 
 @media screen and (max-width:480px) {
 
-    .productoImg{
+    .productoImg {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-    
-    .iconContacto{
+
+    .empresaImg img {
+        width: 90vw;
+    }
+
+    .iconContacto {
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
         row-gap: 2em;

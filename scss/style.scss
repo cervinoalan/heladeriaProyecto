@@ -1,2 +1,5 @@
-@import "./components/variables";
+@import "./base/extends";
+@import "./base/variables";
+@import "./base/mixin";
+@import "./base/maps";
 @import "./components/restodecodigo";

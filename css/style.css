@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.headerTitulo, .iconColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -49,8 +54,6 @@ footer {
   justify-content: center; }
 
 .headerTitulo {
-  display: flex;
-  align-items: center;
   font-family: 'Oleo Script Swash Caps', cursive;
   font-size: 6em;
   color: rgba(255, 255, 255, 0.575);
@@ -59,12 +62,6 @@ footer {
   font-weight: 400; }
 
 /* Maquetado de la pagina index */
-.empresaContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: center; }
-
 .empresaPar {
   width: 35vw;
   overflow: hidden;
@@ -73,8 +70,8 @@ footer {
 
 .empresaImg img {
   border-radius: 1.5em;
-  width: 368px;
-  margin: 0 auto; }
+  width: 25vw;
+  margin: 20px auto; }
 
 /* Maquetado de la pagina sucursales */
 .imgSuc {
@@ -99,9 +96,7 @@ footer {
   margin-bottom: 3em; }
 
 .iconColumn {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   row-gap: 1em; }
 
 /* Diseño de Logo + sus animaciones */
@@ -122,7 +117,9 @@ footer {
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
   transition-property: transform; }
-  .hvr-grow:hover, .hvr-grow :focus, .hvr-grow :active {
+  .hvr-grow:hover,
+  .hvr-grow :focus,
+  .hvr-grow :active {
     transform: scale(1.1); }
 
 /* Diseño Acordeon */
@@ -130,8 +127,11 @@ footer {
   color: #000;
   background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cbe8 74%); }
 
+/* MediasQ */
 @media screen and (max-width: 991px) {
-  #collapseThree, #collapseTwo, #collapseOne {
+  #collapseThree,
+  #collapseTwo,
+  #collapseOne {
     flex-direction: column; }
   nav a {
     display: none; }
@@ -149,6 +149,8 @@ footer {
     text-align: center;
     width: 100%;
     margin: 0 10em; }
+  .empresaImg img {
+    width: 55vw; }
   .postre {
     height: 100%;
     width: 100%; } }
@@ -157,6 +159,8 @@ footer {
   .productoImg {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr; }
+  .empresaImg img {
+    width: 90vw; }
   .iconContacto {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
