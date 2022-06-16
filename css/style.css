@@ -64,9 +64,9 @@ footer {
 /* Maquetado de la pagina index */
 .empresaPar {
   width: 35vw;
-  overflow: hidden;
   margin: 0 auto;
-  text-align: justify; }
+  text-align: justify;
+  overflow: hidden; }
 
 .empresaImg img {
   border-radius: 1.5em;

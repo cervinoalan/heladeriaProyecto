@@ -1,5 +1,5 @@
-@mixin contenedor1 ($fondo,$ancho,$alto,){
-    background-color: $fondo;
+@mixin contenedor ($ancho, $mg-auto, $justificado){
     width: $ancho;
-    height: $alto;
+    margin: $mg-auto;
+    text-align: $justificado;
 }

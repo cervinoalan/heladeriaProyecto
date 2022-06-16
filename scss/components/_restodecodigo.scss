@@ -71,10 +71,8 @@ footer {
 
 /* Maquetado de la pagina index */
 .empresaPar {
-    width: 35vw;
+    @include contenedor($ancho, $mg-auto, $justificado);
     overflow: hidden;
-    margin: 0 auto;
-    text-align: justify;
 }
 
 .empresaImg img {
